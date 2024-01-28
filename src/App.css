@@ -1,0 +1,174 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.main-page {
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.common-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rest-page {
+  margin-top: 50px;
+}
+
+.main-page {
+  margin-left: 30px;
+  font-size: medium;
+  color: inherit;
+}
+
+.main-page.active {
+  font-size: larger;
+  font-weight: bold;
+}
+
+.fav-logo {
+  margin-left: 30px;
+  width: 40px;
+  height: 40px;
+  background-image: url(../public/icons8-star-50.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.fav-on {
+  background-image: url(../public/icons8-star-48.png);
+}
+
+.toggle-fav {
+  position: absolute;
+  top: -30px;
+  right: 30px;
+  width: 15px;
+  height: 15px;
+  background-image: url(../public/icons8-star-50.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.toggle-fav.checked {
+  background-image: url(../public/icons8-star-48.png);
+}
+
+.input {
+  width: 400px;
+  height: 30px;
+  padding: 5px;
+}
+
+.result-quantity {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30px;
+  width: 80px;
+  height: 40px;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+}
+
+.movies-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.movie {
+  position: relative;
+  display: block;
+  min-width: 30%;
+  max-width: 90%;
+  height: auto;
+  margin: 10px;
+}
+
+.movie-item {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: start;
+}
+
+.movie-info {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.item-title {
+  margin-bottom: 5px;
+}
+
+.item-year {
+  margin-top: 5px;
+}
+
+.item-toggle-fav {
+  position: absolute;
+  top: 10px;
+  right: 455px;
+  width: 15px;
+  height: 15px;
+  background-image: url(../public/icons8-star-50.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.item-toggle-fav.checked {
+  background-image: url(../public/icons8-star-48.png);
+}
+
+.navigate-back {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 50px;
+  height: 50px;
+  background-image: url(../public/icons8-back-64.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.preloader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  background-image: url(../public/icons8-preloader.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-top: 20px;
+}
+
+.load-more {
+  width: 500px;
+  height: 40px;
+  color: black;
+  background-color: aliceblue;
+}
